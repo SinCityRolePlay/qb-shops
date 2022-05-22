@@ -21,7 +21,7 @@ end)
 QBCore.Functions.CreateCallback('qb-shops:server:getLicenseStatus', function(source, cb)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local licenseTable = Player.PlayerData.metadata["licences"]
+    local licenseTable = Player.PlayerData.metadata["licenses"]
     local licenseItem = Player.Functions.GetItemByName("weaponlicense")
     cb(licenseTable.weapon, licenseItem)
 end)
